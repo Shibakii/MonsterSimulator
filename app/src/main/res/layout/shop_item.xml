@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="130dp"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:background="@drawable/shop_background">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/item_health_potion"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Health Potion"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/item_description"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="50HP"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/item_price"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FCDE00"
+            android:text="15G"/>
+
+    </LinearLayout>
+
+</LinearLayout>

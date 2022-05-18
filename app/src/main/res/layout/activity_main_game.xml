@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:src="@drawable/config"
+            android:background="@drawable/button_background"
+            android:padding="6dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:src="@drawable/corazon"
+            android:background="@drawable/button_background"
+            android:padding="6dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+    <ImageButton
+        android:scaleType="fitCenter"
+        android:padding="4dp"
+        android:id="@+id/adventureCharImg"
+        android:background="@drawable/character_background"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/adventureCharName"
+                android:text="EJEMPLO NOMBRE"
+                android:layout_marginLeft="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/adventureCharRace"
+                android:textStyle="italic"
+                android:text="Demonio"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:id="@+id/adventureCharLife"
+                android:progressTint="@color/greenLife"
+                android:progressBackgroundTintMode="screen"
+                android:progressBackgroundTint="@color/redLife"
+                android:layout_marginHorizontal="8dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+    <FrameLayout
+        android:id="@+id/aquiVaElFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <fragment
+            android:name="com.example.meaburro.AdventureFragment"
+            android:id="@+id/adventureFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/adventure_adventure"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bosque"
+            android:background="@drawable/button_background"
+            android:padding="6dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/adventure_shop"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tienda"
+            android:background="@drawable/button_background"
+            android:padding="6dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:src="@drawable/cama"
+            android:background="@drawable/button_background"
+            android:padding="6dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
